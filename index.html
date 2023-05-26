@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <form class="main-wrapper">
+    <!-- top wrapper -->
+    <div class="top-wrapper">
+      <div class="input-wrapper">
+        <label>
+          DAY
+        </label>
+        <input maxlength="2" placeholder="DD" type="text" name="day"/>
+        <span></span>
+      </div>
+      <div class="input-wrapper">
+        <label>
+          MONTH
+        </label>
+        <input maxlength="2" placeholder="MM" type="text" name="month"/>
+        <span></span>
+      </div>
+      <div class="input-wrapper">
+        <label>
+          YEAR
+        </label>
+        <input maxlength="4" placeholder="YYYY" type="text" name="year"/>
+        <span></span>
+      </div>
+    </div>
+    <!-- middle arrow wrapper -->
+    <div class="middle-wrapper">
+      <hr/>
+      <button class="arrow-wrapper">
+        <img class="arrow" alt="down-arrow" src="./assets/images/icon-arrow.svg"/>
+      </button>
+    </div>
+    <!-- bottom wrapper -->
+    <div class="bottom-wrapper">
+      <div class="time-wrapper">
+        <span class="year time" data-type="year" name="year">
+          - -
+        </span>
+        <span>
+          years
+        </span>
+        <span class="error">
+
+        </span>
+      </div>
+      <div class="time-wrapper ">
+        <span class="year time" data-type="month" name="month">
+          - -
+        </span>
+        <span>
+          months
+        </span>
+        <span class="error">
+
+        </span>
+      </div>
+      <div class="time-wrapper">
+        <span class="year time" data-type="day" name="day">
+          - -
+        </span>
+        <span>
+          days
+        </span>
+        <span class="error">
+
+        </span>
+      </div>
+    </div>
+
+  </form>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/bap-ssbm">Kentaro Oshimoto</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
